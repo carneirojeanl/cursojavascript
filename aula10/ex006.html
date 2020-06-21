@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep going and DOM</title>
+    <style>
+        body {
+            background-color: rgba(240, 112, 65, 0.637);
+            font: normal 20pt Arial;
+        }
+        div.area {
+            font: normal 20 pt Arial;
+            background-color: cornflowerblue;
+            color:white;
+            width: 150px;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+
+            
+        }
+        h2 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="titulo">Eventos DOM</h2>
+    <div class="area">
+        Interaja...
+    </div>
+    <script>
+        var area = window.document.querySelector('div.area')
+        area.addEventListener('click',clicar)
+        area.addEventListener('mouseenter',entrou)
+        area.addEventListener('mouseout',saiu)
+        function clicar(){
+            area.innerText='clicou'
+            area.style.backgroundColor='red'
+        }
+        function entrou(){
+            area.innerText='entrou'
+            area.style.backgroundColor='yellow'
+        }
+        function saiu(){
+            area.innerText='saiu'
+            area.style.backgroundColor='green'
+        }
+        /*
+        var t= window.document.querySelector('h2.titulo')
+            t.addEventListener('mousein',muitobem)
+            t.addEventListener('mouseout',beleza)
+            function muitobem(){
+                t.innerText='well done'
+
+            }
+            function beleza){
+                t.innerText='Eventos Dom'
+            }
+            */
+    </script>
+</body>
+</html>

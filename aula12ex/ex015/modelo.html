@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Título</h1>
+    </header>
+    <section>
+        <div>
+            <p> Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="1900" max="2019">
+             </p>
+             <p>Sexo:
+                 <input type="radio" name="radsex" id="mas" checked>
+                 <label for="mas">Masculino</label>
+                 <input type="radio" name="radsex" id="fem">
+                 <label for="fem">Feminino</label>
+             </p>
+             <p>Grau de Escolaridade:
+                 
+                <p>
+                    <input type="radio" name="grau" id="fund">
+                     <label for="fund">Ensino Fundamental</label>
+                     <input type="radio" name="grau" id="medi">
+                     <label for="medi">Ensino Médio</label>
+                     <input type="radio" name="grau" id="tecn">
+                     <label for="tecn">Ensino Técnico</label>
+                      <input type="radio" name="grau" id="supe">
+                      <label for="supe">Ensino Superior</label>
+
+                </p>
+                
+             </p>
+             <p>
+                 <input class="ver" type="button" value="Verificar" onclick=" verificar()">
+             </p>
+        </div>
+            
+        <div id="res">
+            preencha os dados acima para ver o resultado!
+            <img id="foto" src="" alt="">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Curso em Vídeo </p>
+
+    </footer>   
+
+    <script src="script.js"></script>
+</body>
+</html>
